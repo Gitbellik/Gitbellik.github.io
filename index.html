@@ -11,7 +11,7 @@
             margin: 0 auto;
             font-family: 'Roboto Slab', serif;
             font-size: 1vw;
-            background-image: url(../images/background_1.jpg);
+            background-image: url(images/background_1.jpg);
             background-attachment: fixed;
             display: flex;
             flex-direction: column;
@@ -22,7 +22,7 @@
         @media (max-width: 320px) and (max-height: 640px) and (orientation: portrait) {
              #video-bg {display: none;}
             iframe {display: none;}
-            body{background-image: url(../images/background_1.jpg);
+            body{background-image: url(images/background_1.jpg);
             background-attachment: scroll;}
         }
         @media (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
@@ -297,7 +297,8 @@
             color: #000;
             position: relative;
             top: 3.5vw;
-            left: 48vw;
+            left: 50vw;
+            transform: translate(-50%);
 
         }
         .github a:hover {
@@ -320,7 +321,7 @@
 <header> 
     <nav>
     <ul class="menu-main">
-        <li><a href="main_page.html" class="page_main">Главная</a></li>
+        <li><a href="index.html" class="page_main">Главная</a></li>
         <li><a href="begin.html" class="page_1">С чего начать</a></li>
         <li><a href="stuff.html" class="page_2">Экипировка</a></li>
         <li><a href="" class="page_3">Курорты</a></li>
@@ -331,7 +332,7 @@
     <div id="video-bg">
         <video width="100%" height="auto" preload=“auto” autoplay=“autoplay”
         loop=“loop”  muted="muted" poster="../images/background_1.jpg">
-        <source src="../images/fon.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="images/fon.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
     </div>
   <main> <input type="checkbox" class="checkbox" id="par1" style="opacity:0"> <h1><label for="par1">История</label></h1>
@@ -373,17 +374,11 @@
 <footer>
         <span class="titles">Сделано с любовью к доскам, креплениям, быстрой езде и снегу.</span>
         <span class="year">&reg; 2019&ndash;2020</span> <span class="author">Евгений Губаревич</span>
-    <div class="social github">
+    <div class="social">
         <a href="https://github.com/Gitbellik" target="_blank"><i class="fab fa-github"></i></a>
         </a>
-    </div>
-    <div class="social youtube">
         <a href="https://www.youtube.com/channel/UCqhnX4jA0A5paNd1v-zEysw" target="_blank"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="social instagram">
         <a href="https://www.instagram.com/evgengubarevich/" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-    <div class="social vk">
         <a href="https://vk.com/dongrafo" target="_blank"><i class="fab fa-vk"></i></a>    
     </div>
 </footer>
