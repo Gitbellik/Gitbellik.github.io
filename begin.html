@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="С чего начать катание на сноуборде и как выбрать стойку" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>С чего начать</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <style>
-        body{
+        
+body{
             margin: 0 auto;
             font-family: 'Roboto Slab', serif;
             font-size: 1vw;
             background-image: url(images/background_1.jpg);
             background-size: cover;
             background-attachment: fixed;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             position: relative;
             min-height: 100vh;
         }
@@ -27,17 +33,23 @@
             position: absolute;
             left: 1em;
             top: 0.2em;
-            box-sizing: border-box;
-            transition: ease-in-out 1s;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
         }
         .page_main:hover{
+            color: snow;
             background-color: black;
             border-style: double;
             border-width: 10px;
             opacity: 1;
-            transition: 1s;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
             
         }
         .page_1{
@@ -45,18 +57,24 @@
             position: absolute;
             left: 10em;
             top: 0.2em;
-            box-sizing: border-box;
-            transition: ease-in-out 1s;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
             
         }
         .page_1:hover{
+            color: snow;
             background-color: black;
             border-style: double;
             border-width: 10px;
             opacity: 1;
-            transition: 1s;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
             
         }
         .page_2{
@@ -64,18 +82,24 @@
             position: absolute;
             left: 22em;
             top: 0.2em;
-            box-sizing: border-box;
-            transition: ease-in-out 1s;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
 
         }
         .page_2:hover{
+            color: snow;
             background-color: black;
             border-style: double;
             border-width: 10px;
             opacity: 1;
-            transition: 1s;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
            
         }
         .page_3{
@@ -83,36 +107,48 @@
             position: absolute;
             left: 34em;
             top: 0.2em;
-            box-sizing: border-box;
-            transition: ease-in-out 1s;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
             
         }
         .page_3:hover{
+            color: snow;
             background-color: black;
             border-style: double;
             border-width: 10px;
             opacity: 1;
-            transition: 1s;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
         }
         .page_4{
             color: #43bdd7;
             position: absolute;
             left: 45em;
             top: 0.2em;
-            box-sizing: border-box;
-            transition: ease-in-out 1s;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
             
         }
         .page_4:hover{
+            color: snow;
             background-color: black;
             border-style: double;
             border-width: 10px;
             opacity: 1;
-            transition: 1s;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
             
         }
         .menu-main{
@@ -123,8 +159,11 @@
             font-size: 2vw;
             color: snow;
             background-color: black;
-            box-sizing: border-box;
-            transition: ease-in-out 1s;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
             height: 2em;
@@ -139,8 +178,11 @@
             text-align: center;
             color: snow;
             background-color: black;
-            box-sizing: border-box;
-            transition: ease-in-out 1s;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
             width: 14em;
