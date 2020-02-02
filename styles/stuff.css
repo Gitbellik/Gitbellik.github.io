@@ -1,0 +1,224 @@
+body{
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1vw;
+    background-image: url(../images/background_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    min-height: 100vh
+}
+a { 
+    text-decoration: none; 
+} 
+.page_main{
+    color: #43bdd7;
+    position: absolute;
+    left: 1em;
+    top: 0.2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border-style: double;
+    border-width: 0;
+}
+.page_main:hover{
+    color: snow;
+    background-color: black;
+    border-style: double;
+    border-width: 10px;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    
+}
+.page_1{
+    color: #43bdd7;
+    position: absolute;
+    left: 10em;
+    top: 0.2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border-style: double;
+    border-width: 0;
+    
+}
+.page_1:hover{
+    color: snow;
+    background-color: black;
+    border-style: double;
+    border-width: 10px;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    
+}
+.page_2{
+    color: #43bdd7;
+    position: absolute;
+    left: 22em;
+    top: 0.2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border-style: double;
+    border-width: 0;
+
+}
+.page_2:hover{
+    color: snow;
+    background-color: black;
+    border-style: double;
+    border-width: 10px;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+   
+}
+.page_3{
+    color: #43bdd7;
+    position: absolute;
+    left: 34em;
+    top: 0.2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border-style: double;
+    border-width: 0;
+    
+}
+.page_3:hover{
+    color: snow;
+    background-color: black;
+    border-style: double;
+    border-width: 10px;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.page_4{
+    color: #43bdd7;
+    position: absolute;
+    left: 45em;
+    top: 0.2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border-style: double;
+    border-width: 0;
+    
+}
+.page_4:hover{
+    color: snow;
+    background-color: black;
+    border-style: double;
+    border-width: 10px;
+    opacity: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    
+}
+.menu-main{
+    list-style-type: none;
+    z-index: 1;
+    position: relative;
+    top: -1em;
+    font-size: 2vw;
+    color: snow;
+    background-color: black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border-style: double;
+    border-width: 0;
+    height: 2em;
+    width: auto;
+}
+h1{
+    position: relative;
+    top: 0.2em;
+    left: 10em;
+    font-size: 3vw;
+    text-align: center;
+    color: snow;
+    background-color: black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border-style: double;
+    border-width: 0;
+    width: 14em;
+    
+}
+h2{
+    color: #43bdd7;
+    text-align: center;
+}
+h3{
+    color: greenyellow;
+}
+main{
+    text-align: justify;
+    color: snow;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid snow;
+    background-color: rgba(0, 0, 0, 0.7);;
+    font-size: 1vw;
+    display: block;
+    padding: 50px;
+    width: 90vw;
+}
+a>img{
+    color: greenyellow;
+}
+.camber{
+   text-align: center;
+}
+.zest{
+    text-align: center;
+}
+.shnur{
+    text-align: center;
+}
+.bakli{
+    text-align: center;
+}
+.highback{
+    text-align: center;
+}
+.krep1{
+   text-align: center;
+}
+#core{
+    position: fixed;
+    top: 90%;
+}

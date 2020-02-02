@@ -1,238 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="Выбор сноуборда, ботинок, креплений" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Экипировка</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <style>
-        body{
-            margin: 0 auto;
-            font-family: 'Roboto Slab', serif;
-            font-size: 1vw;
-            background-image: url(images/background_1.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            position: relative;
-            min-height: 100vh
-        }
-        a { 
-            text-decoration: none; 
-        } 
-        .page_main{
-            color: #43bdd7;
-            position: absolute;
-            left: 1em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-        }
-        .page_main:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-            
-        }
-        .page_1{
-            color: #43bdd7;
-            position: absolute;
-            left: 10em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_1:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-            
-        }
-        .page_2{
-            color: #43bdd7;
-            position: absolute;
-            left: 22em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-
-        }
-        .page_2:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-           
-        }
-        .page_3{
-            color: #43bdd7;
-            position: absolute;
-            left: 34em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_3:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-        }
-        .page_4{
-            color: #43bdd7;
-            position: absolute;
-            left: 45em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_4:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-            
-        }
-        .menu-main{
-            list-style-type: none;
-            z-index: 1;
-            position: relative;
-            top: -1em;
-            font-size: 2vw;
-            color: snow;
-            background-color: black;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            height: 2em;
-            width: auto;
-        }
-        h1{
-            position: relative;
-            top: 0.2em;
-            left: 10em;
-            font-size: 3vw;
-            text-align: center;
-            color: snow;
-            background-color: black;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            width: 14em;
-            
-        }
-        h2{
-            color: #43bdd7;
-            text-align: center;
-        }
-        h3{
-            color: greenyellow;
-        }
-        main{
-            color: snow;
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            border: 5px solid snow;
-            background-color: rgba(0, 0, 0, 0.5);;
-            font-size: 1vw;
-            display: block;
-            padding: 50px;
-            width: 90vw;
-        }
-        a>img{
-            color: greenyellow;
-        }
-        .camber{
-           text-align: center;
-        }
-        .zest{
-            text-align: center;
-        }
-        .shnur{
-            text-align: center;
-        }
-        .bakli{
-            text-align: center;
-        }
-        .highback{
-            text-align: center;
-        }
-        .krep1{
-            text-align: right;
-            float: left;
-            
-        }
-        .krep2{
-            text-align: right;
-            
-        }
-    </style>
+    <link href="styles/stuff.css" rel="stylesheet">
 </head>
 <body>
     <header> 
@@ -260,7 +34,7 @@
        <li>Форма изгиба. Она делится на следующие типы. Camber &mdash; традиционный борд, подходящий для всех стилей катания. Rocker &mdash; доски с этой формой изгиба подходят для любителей фристайла. Flat подходит для фристайла, но вмещает в себя характеристики Camber&acute;a.</li>
        <li>Половой признак. Так как в наше время многие девушки увлекаются сноубордингом, производители предусматривают изготовление женской экипировки.</li>
    </ul>
-  <div class="camber"><img src="images/caramber.png" width="auto" height="auto" alt="Camber and rocker"></div>
+  <div class="camber"><img src="images/caramber.png" width="30%" height="auto" alt="Camber and rocker"></div>
   <h2>Подбор ботинок</h2>
   <p>Если Вы думаете, что самое важное при выборе сноубордического комплекта &mdash; это сноуборд, то тут Вы ошибаетесь. Ботинки для сноуборда &mdash; вот о чем Вы должны подумать в первую очередь. Ведь это в них Вы будете находиться дольше всего, от них напрямую зависит комфорт, безопасность и Ваше настроение.</p>
   <p>При выборе ботинок для сноуборда все немного проще чем с доской. Здесь два основных параметра и еще несколько менее существенных. Итак, поехали..</p>
@@ -277,7 +51,7 @@
     </p>
     <p>Некоторые производители делают ботинки с регулируемой жесткостью. Это обеспечивается за счет специальных пластиковых вставок. Например, без вставок жесткость ботинок 7, а со вставками &mdash; 10. Это очень удобно для тех, кто катается в разных стилях.
     </p>
-    <div class="zest"><img src="images/zhestkost-botinok-dlya-snouborda.jpg" width="auto" height="auto" alt="Жесткость ботинок"></div>
+    <div class="zest"><img src="images/zhestkost-botinok-dlya-snouborda.jpg" width="50%" height="auto" alt="Жесткость ботинок"></div>
     <h3>Материал ботинок для сноуборда</h3>
     <p>Ботинки для сноуборда могут быть двойными &mdash; состоят из самого ботинка и внутреннего, как правильно вынимающегося, сапожка и одинарные &mdash; без внутреннего сапожка. Одинарные ботинки чаще всего используют в прокате или не дорогие производители. Поговорим о ботинках с внутренним сапожком.</p>
     <p>Внешняя часть ботинка может быть изготовлена как из натуральной кожи, так и из искусственных и синтетических материалов. Многие могут подумать, что кожа лучше и качественнее, но это не совсем так. Кожаные ботинки для сноуборда хорошо впитывают воду и влагу и со временем очень сильно деформируются. Ботинки, выполненные из синтетических материалов, пропитывают специальными водоотталкивающими средствами, поэтому можно не бояться, что они промокнут.</p>
@@ -290,12 +64,12 @@
     </p>
     <p>BOA &mdash; быстрая, современная и надежная шнуровка, позволяющая точно настроить степень затяжки. Представляет собой тонкий тросик, который пропущен через петли, фиксируется специальным колесиком. Защелкиваете колесико и крутите пока не почувствуете, что нога достаточно зафиксирована. Для того чтобы ослабить или снять ботинок необходимо всего лишь потянуть колесико. Система шнуровки BOA также, как и быстрая шнуровка бывает двухзонной. Ботинки легко зашнуровать, не снимая перчаток, а это очень важно при низких температурах. Фурнитура Boa® не собирает воду, грязь и лед, не увеличивая тем самым вес обуви. Компания Вoa даёт пожизненную гарантию на свои компоненты шнуровки, поэтому если у Вас случились неполадки с системой шнуровки, Вам заменят комплектующие абсолютно бесплатно. Единственный недостаток такой системы шнуровки &mdash; если она все-таки выйдет из строя, то необходимо обращаться в мастерскую по ремонту. А если в мастерской не окажется комплектующих, то придется потратить время на ожидание запчастей. Такая система шнуровки значительно повышает стоимость ботинка.
     </p>
-   <div class="shnur"> <img src="images/shnurovka-botinok-dlya-snouborda.jpg" width="auto" height="auto" alt="Шнуровка"></div>
+   <div class="shnur"> <img src="images/shnurovka-botinok-dlya-snouborda.jpg" width="50%" height="auto" alt="Шнуровка"></div>
    <h2>Анатомия креплений. На что нужно смотреть при выборе</h2>
    <h3>Бакли</h3>
    <p>Бакли &mdash; это храповые замки, которые затягивают ремни&ndash;стрепы и фиксируют ботинок. И одновременно это едва ли не самая раздражающая деталь во всей конструкции сноубордических креплений при недобросовестном исполнении. Некачественные бакли могут заедать, спонтанно расстёгиваться и ломаться в самый неподходящий момент. А пользоваться ими на склоне придётся часто: как минимум отстёгиваться перед посадкой на подъёмник и встёгиваться обратно в крепления перед спуском. Поэтому бакли могут испортить впечатление даже от неплохих в остальном креплений, и вы будете жалеть о потраченных деньгах.
     </p>
-    <div class="bakli"><img src="images/bakli.jpg" width="auto" height="auto" alt="Бакли"></div>
+    <div class="bakli"><img src="images/bakli.jpg" width="50%" height="auto" alt="Бакли"></div>
     <p>Как правило, некачественные бакли — это визитная карточка наиболее дешёвых креплений на рынке. Но и у серьёзных производителей порой случаются проколы, поэтому перед покупкой всегда стоит удостовериться в чёткости их работы &mdash; застёжка должна максимально легко сниматься, а потом быстро и плотно затягиваться. Титул лучших в индустрии по праву удерживают патентованные бакли Burton, которые ещё и совершенствуются с годами, &mdash; пример тому недавние Double Take с косой насечкой на гребёнке.
     </p>
     <p>Важными компонентами застёжек являются и сами гребёнки &mdash; именно на них фиксируются замки&ndash;бакли. Важно, чтобы они были прочными и достаточно гибкими, при этом сохраняли свою эластичность на холоде. При встёгивании в крепления на гребёнки часто наступают, и если они задубели, то сломать их очень легко. Стоит ли говорить, что найти замену на курорте будет непросто, и столь мелкая деталь может испортить весь отпуск. «Дубовые», плохо гнущиеся гребёнки обычно «фирменная» черта дешёвых креплений, поэтому лучше не экономить, а отдавать предпочтение хотя бы бюджетным моделям от серьёзных производителей. Они используют морозостойкий пластик, который сохраняет свою гибкость на холоде, а в некоторых случаях, например в креплениях Arbor, гребёнки даже дополнительно укрепляют стальным тросиком.
@@ -303,14 +77,14 @@
     <p>Проверить работу гребёнки и бакли можно в магазине. Если они плохо состёгиваются и расстёгиваются даже в тёплом помещении, то на холодном склоне эти проблемы только усугубятся.</p>
     <h3>Хайбек</h3>
     <p>Высокий задник креплений, прилегающий к голенищу ботинка, называется хайбек и служит для точной передачи усилий райдера на задний кант доски. Когда говорят о жёсткости креплений, подразумевают в первую очередь жёсткость хайбека.</p>
-    <div class="highback"><img src="images/highback.jpg" width="auto" height="auto" alt="HighJack"></div>
+    <div class="highback"><img src="images/highback.jpg" width="50%" height="auto" alt="HighJack"></div>
     <p>Жёсткие хайбеки необходимы фрирайдерам и любителям покарвить на сноуборде на крутых и леденистых склонах &mdash; для максимально точного контроля над сноубордом на высоких скоростях. Мягкий и гибкий хайбек необходим поклонникам фристайла и катания в парке &mdash; с ним будет проще давить прессы и делать красивые грэбы. Мягкие крепления также подойдут новичкам за их более «прощающий» характер &mdash; небольшие огрехи в технике будут компенсироваться их не столь точной передачей усилий на кант.</p>
     <p>Оптимальный выбор для большинства райдеров &mdash; средние по жёсткости крепления, которые, как правило, находятся в среднем ценовом диапазоне в рамках модельного ряда одного производителя. При выборе учтите, что различные графические и цифровые индексы жёсткости креплений не унифицированы и справедливы только для модельного ряда одного бренда.</p>
     <p>Удостовериться в том, какой перед вами хайбек &mdash; жёсткий или гибкий, можно лично. Достаточно просто погнуть его в руках. Но на управляемость сноуборда также влияет жёсткость базы креплений. Проверить её &ldquo;руками&rdquo; уже не выйдет, поэтому придётся довериться рекомендациям производителя. Чаще всего жёсткая база подразумевает жёсткий хайбек, и наоборот. Но иногда сочетание может быть иным. Так, компания Flux даже указывает сразу два индекса жёсткости &mdash; отдельно для базы и хайбека.</p>
     <p>На примере жёсткости лучше всего видно, что составляющие сноубордического комплекта должны быть хорошо согласованы между собой. Жёстким креплениям для эффективной работы требуются жёсткие ботинки и доска, и наоборот.</p>
     <h3>База креплений</h3>
     <p>Название этой детали говорит само за себя &mdash; это основание креплений, которое крепится к сноуборду и куда встают ноги райдера. От базы требуются прочность и по возможности небольшой вес. Сломать качественно исполненную базу проблематично. Поэтому некоторые производители, например Burton и Union, не скупятся на пожизненную гарантию на неё при отсутствии внешних механических повреждений &mdash; сколов, зарубов и прочего.</p>
-    <div class="krep1"><img src="images/kre1.jpg" width="500px" height="auto" alt="Baze 1"></div> <div class="krep2"><img src="images/kre2.jpg" width="500px" height="auto" alt="Baze 2"></div>
+    <div class="krep1"><img src="images/kre1.jpg" width="35%" height="auto" alt="Baze 1"></div>
         <p>База креплений может быть монолитной, как, например, у Burton, Flux, Salomon, или обладать регулируемой пяточной дугой &mdash; как у Union, Nitro, Arbor или Rossignol. Первые варианты при прочих равных прочнее. Вторые &mdash; благодаря регулировке совместимы с бо́льшим числом ботинок, но тяжёлым райдерам придётся поискать усиленные версии таких креплений. Например, компания Union специально для них выпускает линейку Force.
         </p>
         <p>Иногда производители делают базу креплений немного подвижной в поперечном направлении. Burton в креплениях EST использует &ldquo;шарнир&rdquo; Hinge, а Salomon изготовляет пяточную дугу подвижной за счёт &ldquo;ремня&rdquo; из кевларовых волокон. Всё это делает физику олли  на сноуборде похожей на олли на скейте &mdash; прыжок получается выше. В карвинге небольшая поперечная подвижность креплений позволяет зарезаться в склон ещё глубже, так как крепление чуть сгибается вместе с ботинком.
@@ -321,6 +95,6 @@
         <p>Ремешки креплений должны плотно охватывать ботинок и прижимать его к базе. Чем лучше он будет зафиксирован, тем точнее будет передача усилий райдера и тем чутче доска будет реагировать на его движения. Хорошие стрепы охватывают ботинок очень плотно, но не передавливают ногу. А очень хорошие &mdash; на ногах и вовсе почти неощутимы.
         </p>
     </main>
-    <h4><a href="stuff.html#top"><img src="https://img.icons8.com/cute-clipart/64/000000/level-up.png"></a></h4>
+    <h4 id="core"><a href="stuff.html#top" title='Устал? Вот подъемник)'><img src="https://img.icons8.com/cute-clipart/64/000000/level-up.png"></a></h4>
 </body>
 </html>

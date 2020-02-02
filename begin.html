@@ -1,225 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="С чего начать катание на сноуборде и как выбрать стойку" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>С чего начать</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <style>
-        
-body{
-            margin: 0 auto;
-            font-family: 'Roboto Slab', serif;
-            font-size: 1vw;
-            background-image: url(images/background_1.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            position: relative;
-            min-height: 100vh;
-        }
-        a { 
-            text-decoration: none; 
-        } 
-        .page_main{
-            color: #43bdd7;
-            position: absolute;
-            left: 1em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-        }
-        .page_main:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-            
-        }
-        .page_1{
-            color: #43bdd7;
-            position: absolute;
-            left: 10em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_1:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-            
-        }
-        .page_2{
-            color: #43bdd7;
-            position: absolute;
-            left: 22em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-
-        }
-        .page_2:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-           
-        }
-        .page_3{
-            color: #43bdd7;
-            position: absolute;
-            left: 34em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_3:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-        }
-        .page_4{
-            color: #43bdd7;
-            position: absolute;
-            left: 45em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_4:hover{
-            color: snow;
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-            
-        }
-        .menu-main{
-            list-style-type: none;
-            z-index: 1;
-            position: relative;
-            top: -1em;
-            font-size: 2vw;
-            color: snow;
-            background-color: black;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            height: 2em;
-            width: auto;
-           
-        }
-        h1{
-            position: relative;
-            top: 0.2em;
-            left: 10em;
-            font-size: 3vw;
-            text-align: center;
-            color: snow;
-            background-color: black;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            width: 14em;
-            
-        }
-        h2{
-            color: #43bdd7;
-            text-align: center;
-        }
-        h3{
-            color: greenyellow;
-        }
-        a>img{
-            color: greenyellow;
-        }
-        main{
-            color: snow;
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            border: 5px solid snow;
-            background-color: rgba(0, 0, 0, 0.5);;
-            font-size: 1vw;
-            display: block;
-            padding: 50px;
-            width: 90vw;
-        }
-        .pic_1,.pic_2,.pic_3{
-            text-align: center;
-        }
-        .pic_4{
-            text-align: left;
-        }
-        .pic_5{
-            text-align: center; 
-        }
-    </style>
+    <link href="styles/begin.css" rel="stylesheet">
 </head>
 <body>
     <header> 
@@ -275,7 +62,7 @@ body{
             Я бы рекомендовал правшам Гуфи, левшам Регуляр. опять же вы катаетесь на роликах и коньках, можете попробовать по аналогии решить что вам ближе, какая нога ведет</p>
     <h2>Стойки Duck и Forward</h2>
     <p>Существует 2 вида стойки: "Duck" (Утиная) и Направленная(Forward)</p>
-        <div class="pic_2"> <img src="images/guide_2.jpg" width="auto" height="auto" alt="Duck or Forward"></div>
+        <div class="pic_2"> <img src="images/guide_2.jpg" width="100%" height="auto" alt="Duck or Forward"></div>
     <p>При Стойке Duck Передний угол ставится где&ndash;то между 30&deg; и 0&deg;, а задний - между &ndash;1&deg; и &ndash;20&deg;</p>
 
        <p> По себе скажу: ставить на ведущую ногу большой угол(те же 30&deg;) будет адски болеть внешняя сторона стопы, т.к. нога в ненормальном положении. Мало кто так может стоять.
@@ -284,7 +71,7 @@ body{
         Более ориентированный на карвинг - +30&deg;/+15&deg; (и некоторые скажут, что это наиболее удачная стойка для начинающих). Я обычно ставлю+ 6 задняя нога, +21 передняя.Ни при каком раскладе угол задней ноги не должен превышать угол передней ноги.</p>
         <p>Я всех ориентирую на Направленную стойку, как более прогрессивную для катания, хотя в ней тяжелее удержать равновесие только что вставшему на доску новичку. Вы научились немного кататься, тогда эта ваша стойка. Несмотря на мнение опытных райдеров(описанное ниже) в направленной стойке больше нагрузка на заднее колено, а в даке-на мышцы задней ноги. В даке вы больше едите боком, в направленной-больше грудью. 
         Потоки воздуха меньше рассекаются при направленной стоке, проще контролировать скорость.</p>
-        <p>Duck или Forward? Аргументы тру-райдеров</p>
+        <p>Duck или Forward? Аргументы тру-райдеров:</p>
 
         <p>Аргументы за утиную (дак) стойку более сомнительны. Много опытных райдеров высказывались против ее, жалуясь на проблемы с коленями. Похоже, что любая сила, приложенная вдоль доски (например, столкновение с деревом), плохо влияет на заднее колено.Более частые травмы сноубордистов, ставивших задний угол на 0 или в минус. Конечно, это может означать, что бордеры в duck&ndash;стойке совершают более опасные трюки.</p>
         <p>Однако, есть аргументы и в пользу дак&ndash;стойки: в ней гораздо легче глубоко садиться. Это легко проверить: попробуйте сесть как можно глубже в направленной стойке и в даке. А поскольку такой присед очень важен в сноубординге, эту стойку можно назвать более дружелюбной к вашим коленям и позвоночнику.</p>
@@ -337,6 +124,6 @@ body{
         Вообще, из&ndash;за огромного числа настроек, сноуборд является невероятно гибким снарядом, а относительно опытный райдер сможет поехать даже на гладильной доске. Это очень интересно, как программировать на С+, т.е. большинство нормальных людей забивает на это через пару дней)
     </p>
     </main>
-    <h4><a href="begin.html#top"><img src="https://img.icons8.com/cute-clipart/64/000000/level-up.png"></a></h4>
+    <h4 id="core"><a href="begin.html#top" title='Устал? Вот подъемник)'><img src="https://img.icons8.com/cute-clipart/64/000000/level-up.png"></a></h4>
 </body>
 </html>
