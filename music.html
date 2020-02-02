@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Музыка</title>
+    <style>
+    body{
+        margin: 0 auto;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1vw;
+        background-image: url(images/background_1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 100vh
+    }
+    @media (max-width: 320px) and (max-height: 640px) and (orientation: portrait) {
+            iframe {display: none;}
+            body{background-image: url(images/background_1.jpg);
+            background-attachment: scroll;
+            }
+
+        }
+        @media (min-width: 320px) and (max-width: 640px) and (orientation: landscape) {
+            iframe {display: none;}
+        }
+    a { 
+            text-decoration: none; 
+        } 
+        .page_main{
+            color: #43bdd7;
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            box-sizing: border-box;
+            transition: ease-in-out 1s;
+            border-style: double;
+            border-width: 0;
+        }
+        .page_main:hover{
+            background-color: black;
+            border-style: double;
+            border-width: 10px;
+            opacity: 1;
+            transition: 1s;
+            
+        }
+        .page_1{
+            color: #43bdd7;
+            position: absolute;
+            left: 10em;
+            top: 0.2em;
+            box-sizing: border-box;
+            transition: ease-in-out 1s;
+            border-style: double;
+            border-width: 0;
+            
+        }
+        .page_1:hover{
+            background-color: black;
+            border-style: double;
+            border-width: 10px;
+            opacity: 1;
+            transition: 1s;
+            
+        }
+        .page_2{
+            color: #43bdd7;
+            position: absolute;
+            left: 22em;
+            top: 0.2em;
+            box-sizing: border-box;
+            transition: ease-in-out 1s;
+            border-style: double;
+            border-width: 0;
+
+        }
+        .page_2:hover{
+            background-color: black;
+            border-style: double;
+            border-width: 10px;
+            opacity: 1;
+            transition: 1s;
+           
+        }
+        .page_3{
+            color: #43bdd7;
+            position: absolute;
+            left: 34em;
+            top: 0.2em;
+            box-sizing: border-box;
+            transition: ease-in-out 1s;
+            border-style: double;
+            border-width: 0;
+            
+        }
+        .page_3:hover{
+            background-color: black;
+            border-style: double;
+            border-width: 10px;
+            opacity: 1;
+            transition: 1s;
+        }
+        .page_4{
+            color: #43bdd7;
+            position: absolute;
+            left: 45em;
+            top: 0.2em;
+            box-sizing: border-box;
+            transition: ease-in-out 1s;
+            border-style: double;
+            border-width: 0;
+            
+        }
+        .page_4:hover{
+            background-color: black;
+            border-style: double;
+            border-width: 10px;
+            opacity: 1;
+            transition: 1s;
+            
+        }
+        .menu-main{
+            list-style-type: none;
+            z-index: 1;
+            position: relative;
+            top: -1em;
+            font-size: 2vw;
+            color: snow;
+            background-color: black;
+            box-sizing: border-box;
+            transition: ease-in-out 1s;
+            border-style: double;
+            border-width: 0;
+            height: 2em;
+            width: auto;
+        }
+        h1{
+            position: relative;
+            top: 0.2em;
+            left: 10em;
+            font-size: 3vw;
+            text-align: center;
+            color: snow;
+            background-color: black;
+            box-sizing: border-box;
+            transition: ease-in-out 1s;
+            border-style: double;
+            border-width: 0;
+            width: 14em;
+            
+        }
+        h2{
+            color: #43bdd7;
+            text-align: center;
+        }
+        h3{
+            color: greenyellow;
+        }
+        main{
+            color: snow;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid snow;
+            background-color: rgba(0, 0, 0, 0.5);;
+            font-size: 1vw;
+            display: block;
+            padding: 50px;
+            width: 90vw;
+        }
+        .music{
+            text-align: center;
+        }
+        .mpodcast{
+            text-align: center;
+        }
+        a{
+            color:#43bdd7;
+        }
+        .podcast{
+            text-align: center;
+        }
+        .yandex_icon{
+            float: left;
+            position: relative;
+            top: -7.3em;
+            left: 6em;
+        }
+        .cloud_icon{
+            position: relative;
+            top: -6.5em;
+            left: 6.5em;
+            float: left;
+        }
+</style>
+</head>
+<body>
+    <header> 
+        <nav>
+        <ul class="menu-main">
+        <li><a href="index.html" class="page_main">Главная</a></li>
+        <li><a href="begin.html" class="page_1">С чего начать</a></li>
+        <li><a href="stuff.html" class="page_2">Экипировка</a></li>
+        <li><a href="places.html" class="page_3">Курорты</a></li>
+        <li><a href="music.html" class="page_4">Музыка</a></li>
+        </ul>
+        </nav>
+    </header>
+    <h1>Что послушать на горе?</h1>
+    <main>
+        <h2>Езда на сноуборде или лыжах само по себе веселое и опасное занятие. Но почему бы не сделать его еще опаснее и веселее?</h2> 
+        <p>На этой странице можно найти самые разные плейлисты с музыкой разных жанров, эпох и стилей. Чуть ниже музыки будут лежать подкасты выбранные автором этого сайта.</p>
+        <h3>Музыка</h3>
+    <ul>
+        <li> 100 самых разных песен. Начинается все с быстрых ритмов и бешеной скорости читки Eminem и 50 Cent и заканчивается мощнымии гитарными риффами от Мэрлина Мэнсона, Culture Shock и Limp Bizkit <br><div class="music"><iframe src="https://open.spotify.com/embed/playlist/0Oui6WjSpGrsjIXlopsg1i" width="50%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div></li>
+        <li> 214 треков или 12 часов и 48 минут удовольствия от прослушивания и покатушек. Что может быть лучше? Автор этого плейлиста либо заморачивался по&ndash;полной, либо просто сваливал в кучу всю всю музыку котрою слышал во время его составления.<br><div class="music"><iframe src="https://open.spotify.com/embed/playlist/2dytQ1lDpL5J0G5PwApdpf" width="50%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div></li>
+        <li> Название плейлиста говорит само за себя &mdash; это просто tropical deep house. Короткий: всего 29 треков или 1 час 38 минут <br><div class="music"><iframe src="https://open.spotify.com/embed/playlist/37cbvS8gFI0ESS2QTMbVYA" width="50%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div></li>
+        <li> Вы ее знаете, вы ее любите (но вряд-ли признаетесь в этом). Это EDM! 4 часа и 44 минуты бочек, резких переходов и мощного эмбиента, который взбодрит лучше чем любой энергетик.<div class="music"><iframe src="https://open.spotify.com/embed/playlist/3TkhIpWDH8nLqYsPdfyMlI" width="50%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div></li>
+        <li> Любители тяжелого рока и металла найдут свои любимые треки здесь! Сам автор описывает плейлист как &laquo;Inspiring and sometimes heavy&raquo;. Решайте сами хотите ли вы погружаться в тяжелую музыку на 3 часа и 28 минут или предпочтете что&ndash;то полегче?<div class="music"><iframe src="https://open.spotify.com/embed/playlist/2AcyGfQkhO8x7rHYR1TDUo" width="50%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div></li>
+    </ul>
+    <h3>Музыкальные подкасты</h3>
+    <p>Здесь находятся подкасты и миксы, которые были прослушаны в горах множество раз и всегда доставляли удовольствие, вне зависимоти от погоды, количества людей на склоне и падений.</p>
+    <ul>
+        <li>Микс от канадской исполнительницы OURI записанный для NTS Radio сочетает в себе как малоизвестные треки типа Drenas от KKing Kong, так и вполне знаменитые ремиксы треков исполнителей вроде R. Kelly. <div class="mpodcast"><iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/368546975&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></div></li>
+        <br>
+        <li> Опять канадский музыкант, зовут его Кристоф Дюбе (<a target="blank" href="https://soundcloud.com/cri-music">CRI</a>). Он уже несколько лет делает музыку &mdash; выпустил пачку альбомов, синглов, ремиксов, а также записал саундтрек для рекламы Louis Vuitton. Это принесло ему нехилую славу, позволившую подписаться на лейбл Young Art от новой звезды электронной музыки TOKiMONSTA. Так же как и OURI этот подкаст Кристоф записал для английского радио NTS.<div class="mpodcast"><iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/268212910&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></div></li>
+        <br>
+        <li>Zavtratunes &mdash; это подкаст с электронной музыкой, который сводит один из ведущих Завтракаста Тимур Сейфельмлюков. У него еще есть два дополнительных направления: Special &mdash; микстейпы от артистов со всего мира, а также Retro &mdash; старые миксы Тимура и других артистов 10-летней давности (и старше). 5&ndash;й выпуск начинается с композиции Вангелиса &laquo;Main Titles&raquo;, которая играет в начале фильма &laquo;Бегущий по лезвию&raquo; и продолжается музыкой таких артистов как MK, Andhim и Pat Lock.<div class="mpodcast"><iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302026507&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></div></li>
+        <br>
+        <li>Прямиком из Бордо! Поприветствуйте Артура Тессье, который выступает под именем <a href="https://soundcloud.com/alis_on">A.L.I.S.O.N</a>, с его миксом в стиле chillwave&frasl;retrowave, который сам он назвал Space Station Radio. Из&ndash;за своего разнопланового вкуса Артур всегда хочет смешивать мечтательные элементы шугейза с тяжелыми ретросинтами. Вы можете сами оценить как у него это получается.<div class="mpodcast"><iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/592927542&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></div></li>
+    </ul>
+    <h3>Классические подкасты</h3>
+    <p></p>
+    <ul>
+        <li>Завтракаст &mdash; это самый популярный подкаст про игры, медиа и технологии в России. Веселые ведущие, свежие новости, советы и обсуждения под хорошую музыку и крутыми гостями. Нашими приглашенными ведущими являются Валентин Wylsacom Петухов и Григорий Bobuk Бакунов. <i>Строго 18+</i><div class="podcast"><iframe frameborder="0" style="border:none;width:50%;height:380px;" width="50%" height="380" src="https://music.yandex.ru/iframe/#album/6411314"></iframe></Li>
+            <br>
+        <li> Ведущие, которые называют себя Бьернский и Мюнхгаузен раз в неделю собираются на кухне, и, за чашкой чая, разговаривают о жизни, рассказывают угарные истории, вспоминают старые приключения, угорают с диких новостей. Короче, обсуждают все то, что обсуждаете обычно с друзьями вы сами.<div class="podcast"><iframe frameborder="0" style="border:none;width:50%;height:380px;" width="50%" height="380" src="https://music.yandex.ru/iframe/#album/6408830"></iframe></div></li>
+            <br>
+        <li> Дима Лось, Илья Кайфожор и Никита Пёс обсуждают интернет.<div class="podcast"><iframe frameborder="0" style="border:none;width:50%;height:380px;" width="50%" height="380" src="https://music.yandex.ru/iframe/#album/7045358"></iframe></div></li>
+            <br>
+        <li>Обо всём на свете и ни о чём конкретно.<div class="podcast"><iframe frameborder="0" style="border:none;width:50%;height:380px;" width="50%" height="380" src="https://music.yandex.ru/iframe/#album/6965486"></iframe></div></li>
+        </ul>
+        <h3>Где еще послушать?</h3>
+        <p>Помимо представленных плейлистов и подкастов можно найти что угодно на ваш вкус в следующих музыкальных сервисах:</p>
+        <div class="spotify_icon"><a href="https://www.spotify.com/us/"><img src="images/spotify.png" width="156" height="156" alt="Spotify"></a></div>
+        <div class="yandex_icon"><a href="https://music.yandex.ru"><img src="images/yandex.png" width="196" height="196" alt="yandex"></a></div>
+        <div class="cloud_icon"><a href="https://soundcloud.com"><img src="images/soundcloud.jpg" width="156" height="156" alt="cloud"></a></div>
+    </main>
+    <h4><a href="music.html#top"><img src="https://img.icons8.com/cute-clipart/64/000000/level-up.png"></a></h4>
+</body>
+</html>
