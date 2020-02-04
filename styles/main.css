@@ -16,16 +16,25 @@
             min-height: 100vh;
             
         }
-        @media screen and (min-width : 320px) and (max-width : 760px) {
-            #video-bg {display: none;}
+        @media screen and (min-width : 220px) and (max-width : 900px) {
             body{
                 background-image: url(../images/background_1.jpg);
                 background-attachment: scroll;
                 margin: 0 auto;
             }
-            body .snow, .style{
+            #video-bg{
+                display: none;
+            }
+            body p, li{
                 font-size: 20px;
             }
+            .menu-main {
+                flex-wrap: wrap;
+              }
+             .menu-main>li {
+                flex-basis: 100%;
+                flex-direction: row;
+              }
             iframe{
                 display: none;
             }
@@ -136,6 +145,7 @@
         }
         a { 
             text-decoration: none; 
+            color: #43bdd7;
         } 
         #video-bg {
             position: fixed;
@@ -169,20 +179,7 @@
         .freestyle,.freeride,.carving,.jibbing{
             color: greenyellow;
         }
-        .page_main{
-            color: #43bdd7;
-            position: absolute;
-            left: 1em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-        }
-        .page_main:hover{
+        .page_1:hover{ 
             background-color: black;
             border-style: double;
             border-width: 10px;
@@ -191,44 +188,6 @@
             -o-transition: .5s;
             transition: .5s;
             
-        }
-        .page_1{
-            color: #43bdd7;
-            position: absolute;
-            left: 10em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_1:hover{
-            background-color: black;
-            border-style: double;
-            border-width: 10px;
-            opacity: 1;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s;
-            
-        }
-        .page_2{
-            color: #43bdd7;
-            position: absolute;
-            left: 22em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-
         }
         .page_2:hover{
             background-color: black;
@@ -240,20 +199,6 @@
             transition: .5s;
            
         }
-        .page_3{
-            color: #43bdd7;
-            position: absolute;
-            left: 34em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
         .page_3:hover{
             background-color: black;
             border-style: double;
@@ -263,21 +208,7 @@
             -o-transition: .5s;
             transition: .5s;
         }
-        .page_4{
-            color: #43bdd7;
-            position: absolute;
-            left: 45em;
-            top: 0.2em;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            -webkit-transition: ease-in-out .5s;
-            -o-transition: ease-in-out .5s;
-            transition: ease-in-out .5s;
-            border-style: double;
-            border-width: 0;
-            
-        }
-        .page_4:hover{
+            .page_4:hover{
             background-color: black;
             border-style: double;
             border-width: 10px;
@@ -287,24 +218,47 @@
             transition: .5s;
             
         }
-        .menu-main{
-            z-index: 1;
-            position: relative;
-            top: -1em;
-            font-size: 2vw;
-            color: snow;
-            background-color: black;
+        nav{
             -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: ease-in-out .5s;
+            -o-transition: ease-in-out .5s;
+            transition: ease-in-out .5s;
+            border-style: double;
+            background-color: black;
+            z-index: 1;
+        
+        }
+            .menu-main{
+            display: flex;
+            list-style: none;
+            list-style-position: outside;
+            padding-inline-start: 0;
+            font-size: 2vw;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
             -webkit-transition: ease-in-out .5s;
             -o-transition: ease-in-out .5s;
             transition: ease-in-out .5s;
             border-style: double;
             border-width: 0;
-            height: 2em;
-            width: auto;
-           
+            z-index: 1;
+            background-color: black;
+            
+            
         }
+        
+            .menu-main>li{
+            flex-basis: 20%;
+            min-width: 100px;
+            padding-block-start: 0;
+            text-align: center;
+            z-index: 1;
+        }
+            .ul {
+            padding: 0;
+            z-index: 1;
+            }
         footer {
             text-align: center;
             z-index: 1;
