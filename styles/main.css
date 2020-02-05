@@ -17,34 +17,58 @@
         }
         @media screen and (min-width : 220px) and (max-width : 900px) {
             body{
-                background-image: url(../images/background_1.jpg);
+                background: greenyellow;
                 background-attachment: scroll;
                 margin: 0 auto;
+                font-size: 20px;
             }
             #video-bg{
                 display: none;
             }
             body p, li{
+                text-align: justify;
+                color: snow;
+                background-color: black;
+                display: block;
+                width: 100%;
                 font-size: 20px;
             }
             .menu-main {
                 -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: stretch;
+                width: auto;    
               }
-             .menu-main>li {
+            .menu-main>li {
                 -ms-flex-preferred-size: 100%;
-                    flex-basis: 100%;
+                flex-basis: 100%;
                 -webkit-box-orient: horizontal;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: row;
-                        flex-direction: row;
+                -ms-flex-direction: row;
               }
+            .page_main:hover{
+                display: none;
+            }
+            .page_1:hover{
+              display: none;
+            }
+            .page_2:hover{
+              display: none;
+            }
+            .page_3:hover{
+              display: none;
+            }
+            .page_4:hover{
+              display: none;
+            }
             iframe{
                 display: none;
             }
-            body h1, h2{
-                font-size: 30px;
+            .snow{
+                font-size: 20px;
             }
+            
         }
         h1{
             position: relative;
@@ -183,6 +207,15 @@
         .freestyle,.freeride,.carving,.jibbing{
             color: greenyellow;
         }
+        .page_main:hover{
+            background-color: black;
+            border-style: double;
+            border-width: 10px;
+            opacity: 1;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;
+        }
         .page_1:hover{ 
             background-color: black;
             border-style: double;
@@ -212,7 +245,7 @@
             -o-transition: .5s;
             transition: .5s;
         }
-            .page_4:hover{
+        .page_4:hover{
             background-color: black;
             border-style: double;
             border-width: 10px;
@@ -230,7 +263,7 @@
             transition: ease-in-out .5s;
             border-style: double;
             background-color: black;
-            z-index: 1;
+            z-index: 5;
         
         }
             .menu-main{

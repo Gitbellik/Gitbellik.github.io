@@ -16,9 +16,8 @@ body{
     min-height: 100vh;
 }
     @media screen and (min-width : 100px) and (max-width : 900px) {
-    #video-bg {display: none;}
     body{
-        background-image: url(../images/background_1.jpg);
+        background: greenyellow;
         background-attachment: scroll;
         margin: 0 auto;
     }
@@ -28,29 +27,54 @@ body{
     .menu-main {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            flex-direction: column;
+            align-content: stretch;
+            width: auto;
       }
-     .menu-main>li {
+    .menu-main>li {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+      }
+    .page_main:hover{
+          display: none;
+      }
+    .page_1:hover{
+        display: none;
+    }
+    .page_2:hover{
+        display: none;
+    }
+    .page_3:hover{
+        display: none;
+    }
+    .page_4:hover{
+        display: none;
+    }
+      h1{
+          font-size: 35px;
       }
       h2{
-          font-size: 13px;
+          font-size: 25px;
       }
+      h3{
+          font-size: 22px;
+      }
+      #core{
+        display: none;
+    }
     main{
         text-align: justify;
         color: snow;
-        /* position: relative;
-        margin-left: auto;
-        margin-right: auto; */
-        border: 5px solid snow;
         background-color: rgba(0, 0, 0, 0.7);
         display: block;
-        padding: 5px;
-        width: 100%;
+        min-width: 100%;
+        margin: auto;
+    }
+    table{
+        font-size: 20px;
     }
 }
 a { 
