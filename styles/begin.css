@@ -17,8 +17,8 @@ body{
 }
     @media screen and (min-width : 100px) and (max-width : 900px) {
     body{
-        background: greenyellow;
-        background-attachment: scroll;
+        background-image: url(../images/background_1.jpg);
+        background-attachment: fixed;
         margin: 0 auto;
     }
     body p, li{
@@ -29,7 +29,7 @@ body{
             flex-wrap: wrap;
             flex-direction: column;
             align-content: stretch;
-            width: auto;
+            width: 100%;
       }
     .menu-main>li {
         -ms-flex-preferred-size: 100%;
@@ -38,20 +38,113 @@ body{
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
       }
-    .page_main:hover{
-          display: none;
+      ul:nth-child(1){
+          width: 100%;
       }
-    .page_1:hover{
+      .page_main:hover{
         display: none;
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+    .page_1:hover{
+      display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
     .page_2:hover{
-        display: none;
+      display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
     .page_3:hover{
-        display: none;
+      display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
     .page_4:hover{
-        display: none;
+      display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
       h1{
           font-size: 35px;
@@ -70,8 +163,8 @@ body{
         color: snow;
         background-color: rgba(0, 0, 0, 0.7);
         display: block;
-        min-width: 100%;
-        margin: auto;
+        min-width: 90%;
+        border: 1px solid snow;
     }
     table{
         font-size: 20px;
@@ -175,10 +268,7 @@ nav{
             padding-block-start: 0;
     text-align: center;
 }
-    .ul {
-    padding: 0;
-    }
- 
+    
 h1{
     position: relative;
     top: 0.2em;
@@ -213,12 +303,11 @@ main{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid snow;
     background-color: rgba(0, 0, 0, 0.7);;
     font-size: 1vw;
     display: block;
-    padding: 50px;
-    width: 90vw;
+    width: 95vw;
+    padding: 5px;
 }
 .pic_1,.pic_2,.pic_3{
     text-align: center;

@@ -19,8 +19,9 @@ body{
     #video-bg {display: none;}
     body{
         background-image: url(../images/background_1.jpg);
-        background-attachment: scroll;
+        background-attachment: fixed;
         margin: 0 auto;
+        min-width: 80%;
     }
     body p, li{
         font-size: 20px;
@@ -39,20 +40,113 @@ body{
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
       }
+      ul:nth-child(1){
+        width: 100%;
+    }
     .page_main:hover{
         display: none;
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
     }
     .page_1:hover{
       display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
     .page_2:hover{
       display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
     .page_3:hover{
-    display: none;
+      display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
     .page_4:hover{
-    display: none;
+      display: none;
+       /*CSS transitions*/
+       -o-transition-property: none !important;
+       -moz-transition-property: none !important;
+       -ms-transition-property: none !important;
+       -webkit-transition-property: none !important;
+       transition-property: none !important;
+       /*CSS transforms*/
+       -o-transform: none !important;
+       -moz-transform: none !important;
+       -ms-transform: none !important;
+       -webkit-transform: none !important;
+       transform: none !important;
+       /*CSS animations*/
+       -webkit-animation: none !important;
+       -moz-animation: none !important;
+       -o-animation: none !important;
+       -ms-animation: none !important;
+       animation: none !important;
     }
     h1{
         font-size: 30px;
@@ -66,11 +160,10 @@ body{
     main{
         text-align: justify;
         color: snow;
-        border: 5px solid snow;
         background-color: rgba(0, 0, 0, 0.7);
         display: block;
-        min-width: 100%;
-        margin: auto;
+        min-width: 90%;
+        border: 1px solid snow;
     }
     #core{
         display: none;
@@ -204,12 +297,11 @@ a {
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        border: 5px solid snow;
         background-color: rgba(0, 0, 0, 0.7);;
         font-size: 1vw;
         display: block;
-        padding: 50px;
-        width: 90vw;
+        width: 95vw;
+        padding: 5px;
     }
     .music{
         text-align: center;
